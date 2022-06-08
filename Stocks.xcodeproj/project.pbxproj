@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F4D24699CC5299A3407BB97 /* Pods_Stocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E048E4CF776143C3DD18FD50 /* Pods_Stocks.framework */; };
+		861FF52328512152003E940B /* MetricCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861FF52228512152003E940B /* MetricCollectionViewCell.swift */; };
 		8636267A283CC03A0017C876 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86362679283CC03A0017C876 /* Extensions.swift */; };
 		8636267C283CC5EF0017C876 /* SearchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8636267B283CC5EF0017C876 /* SearchResultsTableViewCell.swift */; };
 		864325892849F95800A69F42 /* NewsStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864325882849F95800A69F42 /* NewsStoryTableViewCell.swift */; };
@@ -29,10 +30,13 @@
 		86AD75EE283B80A300B697AA /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AD75ED283B80A300B697AA /* HapticsManager.swift */; };
 		86BD8A7628474E5500C446BF /* NewsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BD8A7528474E5500C446BF /* NewsHeaderView.swift */; };
 		86BD8A7828475CD800C446BF /* NewsStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BD8A7728475CD800C446BF /* NewsStory.swift */; };
+		86F150C22850D86C0007FC48 /* FinancialMetricsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F150C12850D86C0007FC48 /* FinancialMetricsResponse.swift */; };
+		86F150C42850DBAF0007FC48 /* StockDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F150C32850DBAF0007FC48 /* StockDetailHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21E3DEA6F23E78A5C95DCC1C /* Pods-Stocks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stocks.debug.xcconfig"; path = "Target Support Files/Pods-Stocks/Pods-Stocks.debug.xcconfig"; sourceTree = "<group>"; };
+		861FF52228512152003E940B /* MetricCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCollectionViewCell.swift; sourceTree = "<group>"; };
 		86362679283CC03A0017C876 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8636267B283CC5EF0017C876 /* SearchResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewCell.swift; sourceTree = "<group>"; };
 		864325882849F95800A69F42 /* NewsStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 		86AD75ED283B80A300B697AA /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		86BD8A7528474E5500C446BF /* NewsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHeaderView.swift; sourceTree = "<group>"; };
 		86BD8A7728475CD800C446BF /* NewsStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStory.swift; sourceTree = "<group>"; };
+		86F150C12850D86C0007FC48 /* FinancialMetricsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialMetricsResponse.swift; sourceTree = "<group>"; };
+		86F150C32850DBAF0007FC48 /* StockDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailHeaderView.swift; sourceTree = "<group>"; };
 		B61EABEA9501B8E5CBBC0A99 /* Pods-Stocks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stocks.release.xcconfig"; path = "Target Support Files/Pods-Stocks/Pods-Stocks.release.xcconfig"; sourceTree = "<group>"; };
 		E048E4CF776143C3DD18FD50 /* Pods_Stocks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stocks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,9 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				86AD75E2283B7E3400B697AA /* Other */,
+				86AD75DF283B7E0B00B697AA /* Views */,
 				86AD75E1283B7E3000B697AA /* Managers */,
 				86AD75DE283B7E0700B697AA /* Models */,
-				86AD75DF283B7E0B00B697AA /* Views */,
 				86AD75E0283B7E0F00B697AA /* Controllers */,
 				86AD75D8283B7DC400B697AA /* Info.plist */,
 			);
@@ -126,6 +132,7 @@
 				868A7260283E2ECD00223FBA /* SearchResponse.swift */,
 				86BD8A7728475CD800C446BF /* NewsStory.swift */,
 				8643258A284A30F000A69F42 /* MarketDataResponse.swift */,
+				86F150C12850D86C0007FC48 /* FinancialMetricsResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,6 +145,8 @@
 				864325882849F95800A69F42 /* NewsStoryTableViewCell.swift */,
 				8643258C284A8F2600A69F42 /* WatchListTableViewCell.swift */,
 				8643258E284A928B00A69F42 /* StockChartView.swift */,
+				86F150C32850DBAF0007FC48 /* StockDetailHeaderView.swift */,
+				861FF52228512152003E940B /* MetricCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -291,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8636267C283CC5EF0017C876 /* SearchResultsTableViewCell.swift in Sources */,
+				86F150C22850D86C0007FC48 /* FinancialMetricsResponse.swift in Sources */,
 				86AD75E8283B7F2A00B697AA /* StockDetailsViewController.swift in Sources */,
 				86AD75EE283B80A300B697AA /* HapticsManager.swift in Sources */,
 				86AD75E4283B7F0600B697AA /* NewsViewController.swift in Sources */,
@@ -298,6 +308,8 @@
 				86AD75EA283B806400B697AA /* APICaller.swift in Sources */,
 				86BD8A7628474E5500C446BF /* NewsHeaderView.swift in Sources */,
 				8636267A283CC03A0017C876 /* Extensions.swift in Sources */,
+				86F150C42850DBAF0007FC48 /* StockDetailHeaderView.swift in Sources */,
+				861FF52328512152003E940B /* MetricCollectionViewCell.swift in Sources */,
 				864325892849F95800A69F42 /* NewsStoryTableViewCell.swift in Sources */,
 				8643258F284A928B00A69F42 /* StockChartView.swift in Sources */,
 				86AD75CB283B7DC100B697AA /* AppDelegate.swift in Sources */,

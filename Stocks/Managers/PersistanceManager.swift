@@ -19,6 +19,10 @@ class PersistanceManager {
     
     private init(){}
     
+    public func watchlistContains(symbol: String) -> Bool {
+        return watchList.contains(symbol)
+    }
+    
     public var watchList: [String] {
         if !hasOnBoarded {
             userDefaults.set(true, forKey: Constants.onBoardedKey)
