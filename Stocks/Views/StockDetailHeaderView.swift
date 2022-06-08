@@ -47,7 +47,10 @@ class StockDetailHeaderView: UIView, UICollectionViewDelegate, UICollectionViewD
         collectionView.frame = CGRect(x: 0, y: height-100, width: width, height: 100)
     }
     
-    public func configure(chartViewModel: StockChartView.ViewModel, metricViewModels: [MetricCollectionViewCell.ViewModel]){
+    public func configure(chartViewModel: StockChartView.ViewModel,
+                          metricViewModels: [MetricCollectionViewCell.ViewModel]){
+        chartView.configure(with: chartViewModel)
+        chartView.isUserInteractionEnabled = false
         self.metricViewModels = metricViewModels
         collectionView.reloadData()
     }

@@ -61,6 +61,7 @@ class WatchListTableViewCell: UITableViewCell {
     private let miniChartView: StockChartView = {
         let chart = StockChartView()
         chart.clipsToBounds = true
+        chart.isUserInteractionEnabled = false
         return chart
     }()
     
@@ -98,7 +99,7 @@ class WatchListTableViewCell: UITableViewCell {
         priceLabel.text = viewModel.price
         changeLabel.text = viewModel.changePercentage
         changeLabel.backgroundColor = viewModel.changeColor
-        // Configure Chart
+        miniChartView.configure(with: viewModel.chartViewModel)
     }
     
     private func setupUI(){
@@ -114,7 +115,7 @@ class WatchListTableViewCell: UITableViewCell {
             make.right.equalTo(priceLabel.snp.left).offset(-20)
             make.top.equalToSuperview().offset(10)
             make.bottom.equalToSuperview().offset(-10)
-            make.width.equalTo(125)
+            make.width.equalTo(140)
         }
         
         changeLabel.snp.makeConstraints { make in
