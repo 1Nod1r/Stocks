@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F4D24699CC5299A3407BB97 /* Pods_Stocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E048E4CF776143C3DD18FD50 /* Pods_Stocks.framework */; };
 		861FF52328512152003E940B /* MetricCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861FF52228512152003E940B /* MetricCollectionViewCell.swift */; };
+		86344B1E2851EB660056C957 /* StocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86344B1D2851EB660056C957 /* StocksTests.swift */; };
 		8636267A283CC03A0017C876 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86362679283CC03A0017C876 /* Extensions.swift */; };
 		8636267C283CC5EF0017C876 /* SearchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8636267B283CC5EF0017C876 /* SearchResultsTableViewCell.swift */; };
 		864325892849F95800A69F42 /* NewsStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864325882849F95800A69F42 /* NewsStoryTableViewCell.swift */; };
@@ -34,9 +35,21 @@
 		86F150C42850DBAF0007FC48 /* StockDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F150C32850DBAF0007FC48 /* StockDetailHeaderView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		86344B1F2851EB660056C957 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86AD75BF283B7DC100B697AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86AD75C6283B7DC100B697AA;
+			remoteInfo = Stocks;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		21E3DEA6F23E78A5C95DCC1C /* Pods-Stocks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stocks.debug.xcconfig"; path = "Target Support Files/Pods-Stocks/Pods-Stocks.debug.xcconfig"; sourceTree = "<group>"; };
 		861FF52228512152003E940B /* MetricCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricCollectionViewCell.swift; sourceTree = "<group>"; };
+		86344B1B2851EB660056C957 /* StocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86344B1D2851EB660056C957 /* StocksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksTests.swift; sourceTree = "<group>"; };
 		86362679283CC03A0017C876 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8636267B283CC5EF0017C876 /* SearchResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewCell.swift; sourceTree = "<group>"; };
 		864325882849F95800A69F42 /* NewsStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -67,6 +80,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		86344B182851EB660056C957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86AD75C4283B7DC100B697AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,10 +115,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		86344B1C2851EB660056C957 /* StocksTests */ = {
+			isa = PBXGroup;
+			children = (
+				86344B1D2851EB660056C957 /* StocksTests.swift */,
+			);
+			path = StocksTests;
+			sourceTree = "<group>";
+		};
 		86AD75BE283B7DC100B697AA = {
 			isa = PBXGroup;
 			children = (
 				86AD75C9283B7DC100B697AA /* Stocks */,
+				86344B1C2851EB660056C957 /* StocksTests */,
 				86AD75C8283B7DC100B697AA /* Products */,
 				3BA6DB6AC1A9F54C4E326B90 /* Pods */,
 				6F027597956035E5084FAD7D /* Frameworks */,
@@ -109,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				86AD75C7283B7DC100B697AA /* Stocks.app */,
+				86344B1B2851EB660056C957 /* StocksTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +218,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		86344B1A2851EB660056C957 /* StocksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86344B232851EB660056C957 /* Build configuration list for PBXNativeTarget "StocksTests" */;
+			buildPhases = (
+				86344B172851EB660056C957 /* Sources */,
+				86344B182851EB660056C957 /* Frameworks */,
+				86344B192851EB660056C957 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86344B202851EB660056C957 /* PBXTargetDependency */,
+			);
+			name = StocksTests;
+			productName = StocksTests;
+			productReference = 86344B1B2851EB660056C957 /* StocksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		86AD75C6283B7DC100B697AA /* Stocks */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86AD75DB283B7DC400B697AA /* Build configuration list for PBXNativeTarget "Stocks" */;
@@ -217,6 +265,10 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					86344B1A2851EB660056C957 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 86AD75C6283B7DC100B697AA;
+					};
 					86AD75C6283B7DC100B697AA = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -236,11 +288,19 @@
 			projectRoot = "";
 			targets = (
 				86AD75C6283B7DC100B697AA /* Stocks */,
+				86344B1A2851EB660056C957 /* StocksTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		86344B192851EB660056C957 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86AD75C5283B7DC100B697AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,6 +355,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		86344B172851EB660056C957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86344B1E2851EB660056C957 /* StocksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86AD75C3283B7DC100B697AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -326,6 +394,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		86344B202851EB660056C957 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86AD75C6283B7DC100B697AA /* Stocks */;
+			targetProxy = 86344B1F2851EB660056C957 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		86AD75D5283B7DC400B697AA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -338,6 +414,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		86344B212851EB660056C957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HSY5R94H24;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nodirbek-s.StocksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stocks.app/Stocks";
+			};
+			name = Debug;
+		};
+		86344B222851EB660056C957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HSY5R94H24;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Nodirbek-s.StocksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stocks.app/Stocks";
+			};
+			name = Release;
+		};
 		86AD75D9283B7DC400B697AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -510,6 +622,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		86344B232851EB660056C957 /* Build configuration list for PBXNativeTarget "StocksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86344B212851EB660056C957 /* Debug */,
+				86344B222851EB660056C957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		86AD75C2283B7DC100B697AA /* Build configuration list for PBXProject "Stocks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
